@@ -1,0 +1,22 @@
+<h1>Add a New Entry for <%= @place.name %></h1>
+<%= form_for [@place, @entry] do |f| %>
+  <div>
+    <%= f.label :title, "Entry Title" %><br>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :description, "Description" %><br>
+    <%= f.text_area :description %>
+  </div>
+
+  <div>
+    <%= f.label :posted_on, "Date" %><br>
+    <!-- Using a date input to allow proper date selection -->
+    <%= f.date_field :posted_on %>
+  </div>
+
+  <div>
+    <%= f.submit "Create Entry" %>
+  </div>
+<% end %>

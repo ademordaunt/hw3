@@ -1,0 +1,12 @@
+<h1>Your Travel Log</h1>
+<ul>
+  <% @places.each do |place| %>
+    <li>
+      <!-- Link to the individual place's detail page -->
+      <%= link_to place.name, place_path(place) %>
+    </li>
+  <% end %>
+</ul>
+
+<!-- Link to add a new place -->
+<%= link_to "Add a New Place", new_place_path %>

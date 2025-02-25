@@ -1,0 +1,10 @@
+<h1>Add a New Place</h1>
+<%= form_for @place do |f| %>
+  <div>
+    <%= f.label :name, "Place Name" %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.submit "Create Place" %>
+  </div>
+<% end %>
