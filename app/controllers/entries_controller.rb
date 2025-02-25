@@ -20,6 +20,6 @@ class EntriesController < ApplicationController
 
   def entry_params
     # Permit title, description, and posted_on; the place_id is handled by the nested route
-    params.require(:entry).permit(:title, :description, :posted_on)
+    params.require(:entry).permit(:title, :description, :occurred_on)
   end
 end

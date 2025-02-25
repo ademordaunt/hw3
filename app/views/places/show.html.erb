@@ -6,7 +6,7 @@
 <ul>
   <% @entries.each do |entry| %>
     <li>
-      <strong><%= entry.title %></strong> on <%= entry.posted_on %><br>
+      <strong><%= entry.title %></strong> on <%= entry.occurred_on %><br>
       <%= entry.description %>
     </li>
   <% end %>
